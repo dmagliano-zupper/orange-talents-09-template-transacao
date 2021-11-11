@@ -63,4 +63,14 @@ public class Transacao {
     public LocalDateTime getEfetivadaEm() {
         return efetivadaEm;
     }
+
+    public TransacaoResponseDto toResponseDto() {
+        return new TransacaoResponseDto(
+                this.idTransacao,
+                this.valor,
+                this.estabelecimento.toResponseDto(),
+                this.cartao.toResponseDto(),
+                this.efetivadaEm
+        );
+    }
 }

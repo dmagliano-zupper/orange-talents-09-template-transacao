@@ -37,4 +37,12 @@ public class Estabelecimento {
     public String getEndereco() {
         return endereco;
     }
+
+    public EstabelecimentoResponseDto toResponseDto(){
+        return new EstabelecimentoResponseDto(
+                this.nome,
+                this.cidade,
+                this.endereco
+        );
+    }
 }
