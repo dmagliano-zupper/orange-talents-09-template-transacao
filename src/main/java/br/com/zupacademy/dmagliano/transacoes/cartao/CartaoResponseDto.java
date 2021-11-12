@@ -1,7 +1,5 @@
 package br.com.zupacademy.dmagliano.transacoes.cartao;
 
-import javax.persistence.Column;
-
 public class CartaoResponseDto {
 
     private String cartaoId;
